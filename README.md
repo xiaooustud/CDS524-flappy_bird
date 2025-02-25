@@ -55,7 +55,7 @@ trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 将 'models/best_model_YYYYMMDD_HHMMSS.pth' 替换为您保存的模型文件路径。
 
 ## 文件说明
-** FlappyBird 类
+ FlappyBird 类
 实现了 Flappy Bird 游戏的核心逻辑，包括：
 管道生成
 小鸟的运动和碰撞检测
