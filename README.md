@@ -18,14 +18,11 @@ markdown
 
 ## 项目结构
 
-.
 ├── FlappyBird.py # 主程序，包含游戏逻辑、DQN 智能体和训练代码
 ├── models/ # 存储训练好的模型
 ├── plots/ # 保存训练过程的可视化图表
 └── README.md # 项目说明文件
 
-
-复制
 
 ## 环境依赖
 
@@ -39,24 +36,15 @@ markdown
 
 您可以通过以下命令安装所需的 Python 包：
 
-```bash
 pip install torch numpy matplotlib pygame
 使用方法
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
-
-bash
-
-复制
 python FlappyBird.py
 游戏窗口将弹出，您可以通过按下空格键让小鸟跳跃，避免撞到管道。
 
 训练智能体
 如果您想训练智能体玩游戏，请运行以下命令：
-
-bash
-
-复制
 python FlappyBird.py
 训练过程中，程序会自动保存训练的模型和生成的可视化图表。
 
@@ -64,12 +52,6 @@ python FlappyBird.py
 如果您已经有训练好的模型，可以通过修改代码加载模型并直接运行训练好的智能体。
 
 在 FlappyBird.py 文件中，找到以下代码并解注释：
-
-python
-
-运行
-
-复制
 trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 将 'models/best_model_YYYYMMDD_HHMMSS.pth' 替换为您保存的模型文件路径。
 
