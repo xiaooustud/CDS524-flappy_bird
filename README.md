@@ -13,7 +13,6 @@
 
 ## 项目结构
 
-.
 ├── FlappyBird.py # 主程序，包含游戏逻辑、DQN 智能体和训练代码
 
 ├── models/ # 存储训练好的模型
@@ -42,7 +41,7 @@ pip install torch numpy matplotlib pygame
 使用方法:
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
-'''bash
+
 python FlappyBird.py
 游戏窗口将弹出，您可以通过按下空格键让小鸟跳跃，避免撞到管道。
 
