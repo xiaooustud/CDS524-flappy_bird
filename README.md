@@ -17,7 +17,7 @@ markdown
 - **训练可视化：** 通过 Matplotlib 绘制训练曲线，包括损失、得分和探索率等。
 
 ## 项目结构
-
+.
 ├── FlappyBird.py # 主程序，包含游戏逻辑、DQN 智能体和训练代码
 ├── models/ # 存储训练好的模型
 ├── plots/ # 保存训练过程的可视化图表
@@ -37,7 +37,9 @@ markdown
 您可以通过以下命令安装所需的 Python 包：
 
 pip install torch numpy matplotlib pygame
+
 使用方法
+
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
 python FlappyBird.py
@@ -52,10 +54,12 @@ python FlappyBird.py
 如果您已经有训练好的模型，可以通过修改代码加载模型并直接运行训练好的智能体。
 
 在 FlappyBird.py 文件中，找到以下代码并解注释：
+
 trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 将 'models/best_model_YYYYMMDD_HHMMSS.pth' 替换为您保存的模型文件路径。
 
 文件说明
+
 FlappyBird 类
 实现了 Flappy Bird 游戏的核心逻辑，包括：
 
