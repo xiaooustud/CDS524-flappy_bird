@@ -33,13 +33,11 @@
 
 您可以通过以下命令安装所需的 Python 包：
 
-```bash
 pip install torch numpy matplotlib pygame
 使用方法
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
 
-bash
 
 python FlappyBird.py
 游戏窗口将弹出，您可以通过按下空格键让小鸟跳跃，避免撞到管道。
@@ -47,7 +45,6 @@ python FlappyBird.py
 训练智能体
 如果您想训练智能体玩游戏，请运行以下命令：
 
-bash
 
 python FlappyBird.py
 训练过程中，程序会自动保存训练的模型和生成的可视化图表。
