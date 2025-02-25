@@ -14,8 +14,11 @@
 ## 项目结构
 .
 ├── FlappyBird.py # 主程序，包含游戏逻辑、DQN 智能体和训练代码
+
 ├── models/ # 存储训练好的模型
+
 ├── plots/ # 保存训练过程的可视化图表
+
 └── README.md # 项目说明文件
 
 ## 环境依赖
@@ -34,7 +37,7 @@
 pip install torch numpy matplotlib pygame
 ```
 
-使用方法
+## 使用方法
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
 ```bash
@@ -51,37 +54,35 @@ trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 ```
 将 'models/best_model_YYYYMMDD_HHMMSS.pth' 替换为您保存的模型文件路径。
 
-文件说明
-FlappyBird 类
+## 文件说明
+** FlappyBird 类
 实现了 Flappy Bird 游戏的核心逻辑，包括：
-
 管道生成
 小鸟的运动和碰撞检测
 游戏状态的渲染
 状态空间的设计
-DQN 类
+
+** DQN 类
 定义了深度 Q 网络的神经网络结构，用于估算动作值。
 
-DQNAgent 类
+** DQNAgent 类
 实现了 DQN 智能体的主要功能，包括：
-
 动作选择（epsilon-greedy 策略）
 经验回放存储和采样
 网络权重更新
 DQNTrainer 类
 负责训练过程的管理，包括：
 
-训练循环
+** 训练循环
 模型保存与加载
 训练数据的记录与可视化
 可视化结果
 训练完成后，程序会在 plots/ 文件夹中生成训练曲线，包括：
-
 损失曲线
 得分曲线
 探索率与总奖励曲线
 您可以使用这些图表来分析训练过程。
 
-注意事项
+## 注意事项
 请确保您的设备支持 GPU 加速（如果可用），以加快训练速度。
 在训练过程中，游戏窗口可能会卡顿。您可以注释掉 self.game.render() 行来禁用渲染，从而提高训练效率。
