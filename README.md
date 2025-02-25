@@ -32,7 +32,7 @@
 
 ```bash
 pip install torch numpy matplotlib pygame
-
+```
 
 使用方法
 运行游戏
