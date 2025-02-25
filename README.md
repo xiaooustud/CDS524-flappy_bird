@@ -62,10 +62,10 @@ trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 游戏状态的渲染
 状态空间的设计
 
-** DQN 类
+ DQN 类
 定义了深度 Q 网络的神经网络结构，用于估算动作值。
 
-** DQNAgent 类
+ DQNAgent 类
 实现了 DQN 智能体的主要功能，包括：
 动作选择（epsilon-greedy 策略）
 经验回放存储和采样
@@ -73,7 +73,7 @@ trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 DQNTrainer 类
 负责训练过程的管理，包括：
 
-** 训练循环
+ 训练循环
 模型保存与加载
 训练数据的记录与可视化
 可视化结果
