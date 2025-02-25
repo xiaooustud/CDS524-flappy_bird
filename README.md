@@ -20,6 +20,7 @@
 └── README.md # 项目说明文件
 
 
+复制
 
 ## 环境依赖
 
@@ -33,19 +34,24 @@
 
 您可以通过以下命令安装所需的 Python 包：
 
+```bash
 pip install torch numpy matplotlib pygame
 使用方法
 运行游戏
 如果您想直接玩游戏，可以运行以下命令：
 
+bash
 
+复制
 python FlappyBird.py
 游戏窗口将弹出，您可以通过按下空格键让小鸟跳跃，避免撞到管道。
 
 训练智能体
 如果您想训练智能体玩游戏，请运行以下命令：
 
+bash
 
+复制
 python FlappyBird.py
 训练过程中，程序会自动保存训练的模型和生成的可视化图表。
 
@@ -56,6 +62,9 @@ python FlappyBird.py
 
 python
 
+运行
+
+复制
 trainer.load_model('models/best_model_YYYYMMDD_HHMMSS.pth')
 将 'models/best_model_YYYYMMDD_HHMMSS.pth' 替换为您保存的模型文件路径。
 
@@ -93,3 +102,5 @@ DQNTrainer 类
 注意事项
 请确保您的设备支持 GPU 加速（如果可用），以加快训练速度。
 在训练过程中，游戏窗口可能会卡顿。您可以注释掉 self.game.render() 行来禁用渲染，从而提高训练效率。
+贡献指南
+欢迎对本项目提出改进建议或提交 Pull Request。如有问题，请提交 Issue。
